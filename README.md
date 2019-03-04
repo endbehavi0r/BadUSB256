@@ -26,12 +26,13 @@ The 8 pins on the other side are together connected to GND.
 ```
 
 ##### Uploading:
-***Easy way:***<br /> 
+***Easy way:***
+<br /> 
 * Clone this repository
 * Open Arduino IDE and select the correct port.
 * Upload the sketch to the Arduino board.
-<br/>
-**Alternative:**<br /> 
+<br />
+***Alternative:***
 * Download the core hex file.
 * Upload them to the board using AVRdude.
 =====
