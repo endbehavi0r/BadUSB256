@@ -38,4 +38,6 @@ The script naming convention is according to the switch states. Therefore, if al
 *The **REPEAT** feature of the Ducky script has not yet been implemented.*
 <br />
 I am no way responsible for any misuse of the device or its source code. If you try to gain unauthorized access to information and get caught using my project and then point your finger at me, I will laugh at you and tell you to cry a river.
+
+
 ***STAY RESPONSIBLE.***
