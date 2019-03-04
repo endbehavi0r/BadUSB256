@@ -36,7 +36,10 @@ The 8 pins on the other side are together connected to GND.
 ### Note:
 The script naming convention is according to the switch states. Therefore, if all switches are in an off state, the script **"00000000.txt"** will be executed and it will execute script **"11111111.txt"** if all of them are in an on state.<br /><br />
 *The **REPEAT** feature of the Ducky script has not yet been implemented.*
-<br />
+
+
+
+
 I am no way responsible for any misuse of the device or its source code. If you try to gain unauthorized access to information and get caught using my project and then point your finger at me, I will laugh at you and tell you to cry a river.
 
 
