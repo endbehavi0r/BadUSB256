@@ -26,8 +26,10 @@ The 8 pins on the other side are together connected to GND.
 ```
 
 ##### Uploading:
-Clone this repository and use Arduino IDE to upload the sketch to the Arduino board.
-
+**Easy way:** Clone this repositoryuse Arduino IDE to upload the sketch to the Arduino board.
+**Alternative:** 
+* Download the core hex file.
+* Upload them to the board using AVRdude.
 ### Note:
-The script naming convention is according to the switch states. Therefore, if all switches are in an off state, the script "00000000.txt" will be executed and it will execute script "11111111.txt" if all of them are in an on state.
-The REPEAT feature of the Ducky script has not yet been implemented.
+The script naming convention is according to the switch states. Therefore, if all switches are in an off state, the script **"00000000.txt"** will be executed and it will execute script **"11111111.txt"** if all of them are in an on state.<br /><br />
+*The **REPEAT** feature of the Ducky script has not yet been implemented.*
