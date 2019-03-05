@@ -29,23 +29,24 @@ The 8 pins on the other side are together connected to GND.
 Download the binaries from the latest [releases](https://github.com/f10gic/BadUSB256/releases).
 There are two ways by which the code can be uploaded, by using either Arduino IDE or AVRdude.
 #### Arduino:
-* Open the BadUSB256.ino in Arduino IDE
-* Update your libraries if not already done
+* Open the `BadUSB256.ino` in *Arduino IDE*
+* Update your libraries if not done already
 * Select the correct board and port
-* Set the programmer to AVRISP mkII
+* Set the programmer to `AVRISP mkII`
 * Upload
 
 
 #### AVRdude:
-* Open the core.hex in AVRdude
-* Set the programmer to AVRISP mkII
+* Open the `core.hex` in *AVRdude*
+* Update your libraries if not done already
+* Set the programmer to `AVRISP mkII`
 * Select the correct port
 * Upload
 
 
 ### Note:
-The script naming convention is according to the switch states. Therefore, if all switches are in an off state, the script **"00000000.txt"** will be executed and it will execute script **"11111111.txt"** if all of them are in an on state.<br /><br />
-*The **REPEAT** feature of the Ducky script has not yet been implemented.*
+The script naming convention is according to the switch states. Therefore, if all switches are in an off state, the script `"00000000.txt"` will be executed and it will execute script ```"11111111.txt"``` if all of them are in an on state.<br /><br />
+*The `REPEAT` feature of the Ducky script has not yet been implemented.*
 
 
 
