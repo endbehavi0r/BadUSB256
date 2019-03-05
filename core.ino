@@ -3,17 +3,16 @@
 #include <SD.h>
 int d=500;
 void setup(){
-  for(String dip="";dip.length()<8;pinMode(dip.length()+2,INPUT_PULLUP)){
-    dip+=(digitalRead(dip.length()+2)==1)?"0":"1";
-  }
-  if(!SD.begin(10))return;
+  String dip="";
+  for(;dip.length()<8;dip+=(!digitalRead(dip.length()+2)))pinMode(dip.length()+2,INPUT_PULLUP);
+  if(!SD.begin(10))return;                                                                                                            
   File file=SD.open(dip+".txt");
   if(file){
-    Keyboard.begin();
+    Keyboard.begin();                                                                                                                                                                           
     delay(500);
     String line="";
     while(file.available()) {
-      char m=file.read();
+      char m=file.read();                                                                                                                                                                                             
       if (m=='\n'){
         Line(line);
         line="";
