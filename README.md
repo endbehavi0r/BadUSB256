@@ -25,14 +25,24 @@ The 8 pins on one side of the dip switch are connected to pins 2 through 10.
 The 8 pins on the other side are together connected to GND.
 ```
 
-##### Uploading:
-###### Easy way:
-* Clone this repository
-* Open Arduino IDE and select the correct port.
-* Upload the sketch to the Arduino board.
-###### Alternative:
-* Download the core hex file.
-* Upload them to the board using AVRdude.
+### Uploading:
+Download the binaries from the latest [releases](https://github.com/f10gic/BadUSB256/releases).
+There are two ways by which the code can be uploaded, by using either Arduino IDE or AVRdude.
+##### ARDUINO:
+###### * Open the BadUSB256.ino in Arduino IDE
+###### * Update your libraries if not already done
+###### * Select the correct board and port
+###### * Set the programmer to AVRISP mkII
+###### * Upload
+
+
+##### AVRDUDE:
+###### * Open the core.hex in AVRdude
+###### * Set the programmer to AVRISP mkII
+###### * Select the correct port
+###### * Upload
+
+
 ### Note:
 The script naming convention is according to the switch states. Therefore, if all switches are in an off state, the script **"00000000.txt"** will be executed and it will execute script **"11111111.txt"** if all of them are in an on state.<br /><br />
 *The **REPEAT** feature of the Ducky script has not yet been implemented.*
