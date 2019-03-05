@@ -1,16 +1,13 @@
 #include <Keyboard.h>
 #include <SPI.h>
 #include <SD.h>
-File file;  
 int d=500;
 void setup(){
-  String dip="";
-  while(dip.length()<8){
-    pinMode(dip.length()+2,INPUT_PULLUP);
+  for(String dip="";dip.length()<8;pinMode(dip.length()+2,INPUT_PULLUP)){
     dip+=(digitalRead(dip.length()+2)==1)?"0":"1";
   }
   if(!SD.begin(10))return;
-  file=SD.open(dip+".txt");
+  File file=SD.open(dip+".txt");
   if(file){
     Keyboard.begin();
     delay(500);
