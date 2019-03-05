@@ -1,10 +1,10 @@
 #include <Keyboard.h>
 #include <SPI.h>
 #include <SD.h>
-int d=500;
 void setup(){
   String dip="";
-  for(;dip.length()<8;dip+=(!digitalRead(dip.length()+2)))pinMode(dip.length()+2,INPUT_PULLUP);
+  for(int d=dip.length()+2;d<10;dip+=(!digitalRead(d)))pinMode(d,INPUT_PULLUP);
+  d=500;
   if(!SD.begin(10))return;                                                                                                            
   File file=SD.open(dip+".txt");
   if(file){
