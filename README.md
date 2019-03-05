@@ -11,7 +11,7 @@ This project requires the following prerequisites to be created:
 * 8 way dip switch
 
 ## Setup
-##### Connections:
+### Connections:
 ```
 Arduino microSD
 VCC --> VCC
