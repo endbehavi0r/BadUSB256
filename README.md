@@ -19,7 +19,7 @@ D15 --> SCK
 D14 --> MISO
 D16 --> MOSI
 GND --> GND
-A0 --> CS
+10 --> CS
 
 The 8 pins on one side of the dip switch are connected to pins 2 through 10.
 The 8 pins on the other side are together connected to GND.
