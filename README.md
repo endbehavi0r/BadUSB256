@@ -28,19 +28,19 @@ The 8 pins on the other side are together connected to GND.
 ### Uploading:
 Download the binaries from the latest [releases](https://github.com/f10gic/BadUSB256/releases).
 There are two ways by which the code can be uploaded, by using either Arduino IDE or AVRdude.
-##### ARDUINO:
-###### * Open the BadUSB256.ino in Arduino IDE
-###### * Update your libraries if not already done
-###### * Select the correct board and port
-###### * Set the programmer to AVRISP mkII
-###### * Upload
+#### Arduino:
+* Open the BadUSB256.ino in Arduino IDE
+* Update your libraries if not already done
+* Select the correct board and port
+* Set the programmer to AVRISP mkII
+* Upload
 
 
-##### AVRDUDE:
-###### * Open the core.hex in AVRdude
-###### * Set the programmer to AVRISP mkII
-###### * Select the correct port
-###### * Upload
+#### AVRdude:
+* Open the core.hex in AVRdude
+* Set the programmer to AVRISP mkII
+* Select the correct port
+* Upload
 
 
 ### Note:
